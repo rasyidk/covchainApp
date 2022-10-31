@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainUI.riwayat.RiwayatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:background="@drawable/rounded_relative_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mainLeftMargin"
+                android:layout_marginRight="@dimen/mainRightMargin"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat"
+                android:fontFamily="@font/mnsbold"
+                android:textSize="80px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaksi vaksin COVID-19 yang pernah anda lakukan"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/mainRightMargin"
+            android:layout_marginLeft="@dimen/mainLeftMargin"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sgn_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:drawableRight="@drawable/ic_search_grey_24dp"
+                android:layout_height="50dp"
+                android:padding="15dip"
+                android:drawablePadding="10dp"
+                android:hint="Cari riwayat transaksi"
+                android:background="@drawable/rounded_edittext" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:background="@drawable/rounded_relative_solid"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/bluesky"
+                        android:text="CanSino"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#F0F0F0"
+                        android:layout_marginBottom="7dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20px"
+                            android:layout_height="65dp"
+                            card_view:cardBackgroundColor="@color/bluesky"
+                            card_view:cardCornerRadius="3dp"></androidx.cardview.widget.CardView>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20px"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diterima"
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:textSize="25sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Dari: Marcellito"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="60px"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_date_range_grey_24dp"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_marginLeft="15px"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 Desember 2020"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/mnsbold"
+                                android:layout_centerVertical="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/riw_btlck_cansino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Lacak Vaksin"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/mnsbold"
+                                android:textAllCaps="false"
+                                android:textColor="@color/bluesky"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/rounded_button_white"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:background="@drawable/rounded_relative_solid"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Sinovac"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#F0F0F0"
+                        android:layout_marginBottom="7dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20px"
+                            android:layout_height="65dp"
+                            card_view:cardBackgroundColor="@color/colorPrimary"
+                            card_view:cardCornerRadius="3dp"></androidx.cardview.widget.CardView>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20px"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diterima"
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:textSize="25sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Dari: Marcellito"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="60px"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_date_range_grey_24dp"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_marginLeft="15px"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 Desember 2020"
+                                android:fontFamily="@font/mnsbold"
+                                android:textSize="13sp"
+                                android:layout_centerVertical="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/riw_btlck_sinovac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Lacak Vaksin"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/mnsbold"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/rounded_button_white"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:background="@drawable/rounded_relative_solid"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/green"
+                        android:text="Sinopharm"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#F0F0F0"
+                        android:layout_marginBottom="7dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="20px"
+                            android:layout_height="65dp"
+                            card_view:cardBackgroundColor="@color/green"
+                            card_view:cardCornerRadius="3dp"></androidx.cardview.widget.CardView>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20px"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diterima"
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:textSize="25sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Dari: Marcellito"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="60px"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_date_range_grey_24dp"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_marginLeft="15px"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 Desember 2020"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/mnsbold"
+                                android:layout_centerVertical="true"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/riw_btlck_sinopharm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Lacak Vaksin"
+                                android:fontFamily="@font/mnsbold"
+                                android:textAllCaps="false"
+                                android:textSize="13sp"
+                                android:textColor="@color/green"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/rounded_button_white"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

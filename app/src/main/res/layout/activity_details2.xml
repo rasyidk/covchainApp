@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainUI.QRscann.Details.Details2">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/det2_rel"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_topleft_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_above="@id/det2_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsbold"
+                android:text="Vaksin COVID-19"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apabila data dipersalahgunakan akan ditindak sesuai hukum yang berlaku"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mnsbold"
+                android:text="Detail"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Jenis vaksin : Sinovac" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Kode Produk : AJDHD99920J" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Jumlah : 50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Tanggal Produksi : 30-9-2020" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Tanggal Kadaluarsa: 30-1-2021" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mnsbold"
+                android:text="Pengirim"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="id : JA010" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Nama : George Harisson" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Company : PT Yellow Submarine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mnsbold"
+                android:text="Produsen"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Company : PT BIO FARMA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mnsreg"
+                android:text="Location : Tangerang, Indonesia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/det2_lin"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_top">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah anda akan menerima vaksin?"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/det2_bt_tolak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tolak"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/mnsbold"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_button_line"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/det2_bt_terima"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terima"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_button"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/mnsbold"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/det2_bt_close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            style="?android:attr/borderlessButtonStyle"
+            app:layout_anchor="@id/det2_rel"
+            android:background="@drawable/btx"
+            android:layout_marginRight="50dp"
+            app:layout_anchorGravity="right|top"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

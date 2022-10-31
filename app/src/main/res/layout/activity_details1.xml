@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainUI.QRscann.Details.Details1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_above="@id/det1_lin"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/mainRightMargin"
+                    android:layout_marginLeft="@dimen/mainLeftMargin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scanning Data"
+                        android:fontFamily="@font/mnsreg"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berhasil"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mnsbold"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lakukan validasi data terlebih dahulu  sebelum menerima vaksin COVID-19"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mnsreg"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/mainRightMargin"
+                    android:layout_marginLeft="@dimen/mainLeftMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Detail Produk"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/mnsbold"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vaksin Sinovac"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/mnsbold"
+                            android:textSize="30sp"/>
+
+
+                        <TextView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kode Produk : A98BJI000"
+                            android:fontFamily="@font/mnsreg"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pengirim : Marcellito (Distributor)"
+                            android:fontFamily="@font/mnsreg"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PT BIO FARMA"
+                            android:fontFamily="@font/mnsbold"
+                            android:layout_marginTop="30dp"
+                            android:textColor="@color/white"/>
+
+                        <RelativeLayout
+                            android:layout_marginTop="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/det1_bt_details"
+                                android:text="Details"
+                                android:background="@drawable/rounded_button_white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:drawablePadding="20dp"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/mnsreg"
+                                android:drawableRight="@drawable/ic_format_align_right_black_24dp"
+                                android:textAllCaps="false"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/det1_lin"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_top">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apakah anda akan menerima vaksin?"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/det1_bt_tolak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tolak"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/mnsbold"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_button_line"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/det1_bt_terima"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terima"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_button"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/mnsbold"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

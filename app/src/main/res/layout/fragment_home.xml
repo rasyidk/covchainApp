@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="740px"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_linear"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mainLeftMargin"
+                    android:layout_marginRight="@dimen/mainRightMargin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/mnsreg"
+                        android:text="Hai.."
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mnsbold"
+                        android:text="Sahabat sehat"
+                        android:textColor="#fff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50px"
+                        android:fontFamily="@font/mnsreg"
+                        android:text="Berikut adalah dashboard distribusi vaksin covid terkini"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/mainLeftMargin"
+                android:layout_marginRight="@dimen/mainRightMargin"
+                android:layout_marginBottom="50px"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mnsbold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Deskripsi"/>
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+
+                            android:layout_width="250sp"
+                            android:layout_height="400px"
+                            android:background="@drawable/rounded_relative_full">
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginLeft="40px"
+                            android:layout_width="250sp"
+                            android:layout_height="400px"
+                            android:background="@drawable/rounded_relative_full"/>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="40px"
+                            android:layout_width="250sp"
+                            android:layout_height="400px"
+                            android:background="@drawable/rounded_relative_full" />
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_marginTop="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mnsbold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Berita Terkini"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                    android:layout_marginTop="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:background="@drawable/rounded_beritaterkini"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_marginLeft="40px"
+                        android:padding="20px"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logotirto" />
+
+                    <RelativeLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginBottom="20px"
+                        android:background="#EEEEEE"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mnsreg"
+                                android:text="Berita tentang covid terkini yang adaxxxxxxxx"
+                                android:textColor="@color/black"
+                                android:ellipsize="end"
+                                android:inputType="none"
+                                android:maxLines="1"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="www.tirto.id/beritacovid"
+                                    android:fontFamily="@font/mnsreg"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="200px"
+                        android:background="@drawable/rounded_beritaterkini"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="40px"
+                            android:padding="20px"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logotirto" />
+
+                        <RelativeLayout
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginBottom="20px"
+                            android:background="#EEEEEE"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20px">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Berita tentang covid terkini yang adaxxxxxxxx"
+                                    android:textColor="@color/black"
+                                    android:ellipsize="end"
+                                    android:inputType="none"
+                                    android:maxLines="1"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="www.tirto.id/beritacovid"
+                                        android:fontFamily="@font/mnsreg"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="200px"
+                        android:background="@drawable/rounded_beritaterkini"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="40px"
+                            android:padding="20px"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logotirto" />
+
+                        <RelativeLayout
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginBottom="20px"
+                            android:background="#EEEEEE"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20px">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Berita tentang covid terkini yang adaxxxxxxxx"
+                                    android:textColor="@color/black"
+                                    android:ellipsize="end"
+                                    android:inputType="none"
+                                    android:maxLines="1"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="www.tirto.id/beritacovid"
+                                        android:fontFamily="@font/mnsreg"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:layout_width="match_parent"
+                        android:layout_height="200px"
+                        android:background="@drawable/rounded_beritaterkini"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="40px"
+                            android:padding="20px"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logotirto" />
+
+                        <RelativeLayout
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20px"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginBottom="20px"
+                            android:background="#EEEEEE"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20px">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:text="Berita tentang covid terkini yang adaxxxxxxxx"
+                                    android:textColor="@color/black"
+                                    android:ellipsize="end"
+                                    android:inputType="none"
+                                    android:maxLines="1"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="www.tirto.id/beritacovid"
+                                        android:fontFamily="@font/mnsreg"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="85dp"
+            card_view:cardBackgroundColor="#FFF"
+            card_view:layout_anchor="@id/LinearLayout1"
+            card_view:layout_anchorGravity="center|bottom"
+            card_view:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:text="Jumlah Vaksin"/>
+
+                                <TextView
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="40sp"
+                                    android:text="456"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:textSize="12sp"
+                                    android:text="Terdistribusi"/>
+
+                                <TextView
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="40sp"
+                                    android:text="300"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mnsreg"
+                                    android:textSize="12sp"
+                                    android:text="Digunakan"/>
+
+                                <TextView
+                                    android:fontFamily="@font/mnsbold"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="40sp"
+                                    android:text="200"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</ScrollView>
